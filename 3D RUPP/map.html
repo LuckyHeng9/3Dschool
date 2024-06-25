@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mab.css">
+    <title>3D Map</title>
+</head>
+
+<body>
+    <canvas class="canvas"></canvas>
+    
+    <div class="card">
+        <i class="fa-solid fa-rectangle-xmark"></i>
+        <h1 class="text">Building T</h1>
+        <div class="cardtext">
+            <h3>A building has 7 floors and 700 classes. It has an elevator for easy access.</h3>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <div class="vertical-line"></div>
+    </div> -->
+      
+    <section class="progress-bar-container">
+        <label for="progress-bar">Loading...</label>
+        <progress id="progress-bar" value="0" max="100"></progress>
+    </section>
+
+    <!-- Three.js -->
+    <script src="https://unpkg.com/three@0.136.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.136.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.136.0/examples/js/controls/OrbitControls.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/c51717703a.js" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+    <script src="/Component/UI.js"></script>
+        
+</body>
+
+</html>

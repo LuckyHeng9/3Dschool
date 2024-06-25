@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow: hidden;
+  }
+
+.canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.card {
+    width: 40rem;
+    height: 35rem;
+    position: absolute;
+    left: 55rem;
+    margin-top: 6rem;
+    border: 2px solid blue;
+    border-radius: 2rem;
+    background-image: url('/asset/build A.jpg');
+    background-size: 100% 100%;
+    
+}
+
+.cardtext {
+    background-color: rgb(28, 8, 8); /* Fallback color */
+    background-color: rgba(6, 0, 0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    width: 40rem;
+    height: 18.4rem;
+    padding: 0 3.5rem;
+    border-radius: 2rem;
+}
+
+.text {
+    margin-top: 12rem;
+    padding: 0 2rem;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fe0000;
+    margin: 0;
+    /* Reset margin to remove default spacing */
+}
+
+h3 {
+    padding: 10px 0;
+    font-size: 24px;
+    /* Adjust font size as needed */
+    color: #ffffff;
+    /* Set color for description */
+}
+
+.btnlabel {
+    position: absolute;
+    /* Additional styling for the buttons */
+    z-index: 100;
+    color: #000000;
+    background: #ffffff;
+    display: flex;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transform: translateY(-54px); 
+    transition: all 0.05s;
+    white-space: nowrap;
+    scale: 1.2;
+}
+.btnlabel:hover{
+     color: #ffffff;
+     background: #000000;
+}
+
+.container {
+    position: relative;
+}
+
+.vertical-line::after {
+    content: '';
+    position: absolute;
+    padding: 20px .5px;
+    width: .5px; /* Change thickness as needed */
+    background-color: #ffffff; /* Change color as needed */
+    left: 50%;
+    transform: translateY(255px);
+    transform: translateZ(50%);
+}
+
+.progress-bar-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#progress-bar{
+    width: 30%;
+    height: 2%;
+    margin-top: 0.5%;
+}
+label .btnlabel{
+    color: white;
+    font-size: 2rem;
+}
+.fa-solid{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 92%;
+    top: 8px;
+}
+
+.fa-solid:hover{
+    scale: 1.2;
+    rotate: 45deg;
+    color: #000000;
+}
+
